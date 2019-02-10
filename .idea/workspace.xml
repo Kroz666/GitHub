@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e43ed3-3972-4d34-8395-3a77f6b49288" name="Default Changelist" comment="rdy">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GitHub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GitHub/LitecartLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GitHub/LitecartLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GitHub/LitecartLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GitHub/LitecartLogin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,17 +20,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/production/GitHub/MyTest.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="21" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/out/production/GitHub/LitecartLogin.java">
+        <entry file="file://$PROJECT_DIR$/out/production/GitHub/LitecartLoginIE.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="323">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,6 +61,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/MyTest.java" />
         <option value="$PROJECT_DIR$/out/production/GitHub/LitecartLogin.java" />
+        <option value="$PROJECT_DIR$/out/production/GitHub/LitecartLoginIE.java" />
       </list>
     </option>
   </component>
@@ -111,7 +115,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549796166070" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549798910338" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -129,9 +133,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LitecartLogin">
+  <component name="RunManager" selected="Application.LitecartLoginIE">
     <configuration name="LitecartLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LitecartLogin" />
+      <module name="GitHub" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LitecartLoginIE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LitecartLoginIE" />
       <module name="GitHub" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,9 +162,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.LitecartLogin" />
+      <item itemvalue="Application.LitecartLoginIE" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LitecartLoginIE" />
         <item itemvalue="Application.LitecartLogin" />
         <item itemvalue="Application.Main" />
       </list>
@@ -253,20 +266,30 @@
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/GitHub/MyTest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/GitHub/LitecartLogin.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/GitHub/LitecartLogin.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/GitHub/MyTest.class">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/GitHub/LitecartLoginIE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -338,7 +361,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.seleniumhq.selenium:selenium-chrome-driver:3.141.59</last-edited>
+          <last-edited>org.seleniumhq.selenium:selenium-ie-driver:3.141.59</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
