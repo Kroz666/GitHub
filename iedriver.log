@@ -1,0 +1,98 @@
+I 2019-02-17 01:01:13:419 server.cc(86) Starting WebDriver server on port: '26948' on host: ''
+T 2019-02-17 01:01:13:419 server.cc(634) Entering Server::PopulateCommandRepository
+T 2019-02-17 01:01:13:419 IEServer.cpp(32) Entering IEServer::IEServer
+I 2019-02-17 01:01:13:419 IEServer.cpp(33) Driver version: 3.9.0.0 (64-bit)
+T 2019-02-17 01:01:13:419 server.cc(121) Entering Server::Start
+D 2019-02-17 01:01:13:419 server.cc(148) Civetweb ACL is -0.0.0.0/0,+127.0.0.1
+T 2019-02-17 01:01:13:621 server.cc(174) Entering Server::ProcessRequest
+T 2019-02-17 01:01:13:621 server.cc(183) Process request with: URI: /status HTTP verb: GET
+body: {}
+T 2019-02-17 01:01:13:621 server.cc(272) Entering Server::DispatchCommand
+T 2019-02-17 01:01:13:621 server.cc(583) Entering Server::LookupCommand
+D 2019-02-17 01:01:13:621 server.cc(281) Command: GET /status {}
+T 2019-02-17 01:01:13:621 IEServer.cpp(51) Entering IEServer::GetStatus
+T 2019-02-17 01:01:13:621 response.cc(72) Entering Response::SetSuccessResponse
+T 2019-02-17 01:01:13:621 response.cc(78) Entering Response::SetResponse
+T 2019-02-17 01:01:13:621 response.cc(51) Entering Response::Serialize
+D 2019-02-17 01:01:13:621 server.cc(338) Response: {"value":{"build":{"version":"3.9.0.0 (64-bit)"},"message":"Ready to create session","os":{"arch":"x64","name":"windows","version":"6.3.9600.17031 (winblue_gdr.140221-1952)"},"ready":true}}
+
+T 2019-02-17 01:01:13:622 server.cc(391) Entering Server::SendResponseToClient
+T 2019-02-17 01:01:13:622 response.cc(30) Entering Response::Deserialize
+T 2019-02-17 01:01:13:622 server.cc(445) Entering Server::SendHttpOk
+T 2019-02-17 01:01:14:356 server.cc(174) Entering Server::ProcessRequest
+T 2019-02-17 01:01:14:356 server.cc(238) Entering Server::ReadRequestBody
+T 2019-02-17 01:01:14:356 server.cc(183) Process request with: URI: /session HTTP verb: POST
+body: {
+  "desiredCapabilities": {
+    "se:ieOptions": {
+    },
+    "browserName": "internet explorer"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "se:ieOptions": {
+        }
+      }
+    ]
+  }
+}
+T 2019-02-17 01:01:14:356 server.cc(272) Entering Server::DispatchCommand
+T 2019-02-17 01:01:14:356 server.cc(583) Entering Server::LookupCommand
+D 2019-02-17 01:01:14:357 server.cc(281) Command: POST /session {
+  "desiredCapabilities": {
+    "se:ieOptions": {
+    },
+    "browserName": "internet explorer"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "se:ieOptions": {
+        }
+      }
+    ]
+  }
+}
+T 2019-02-17 01:01:14:357 IEServer.cpp(42) Entering IEServer::InitializeSession
+T 2019-02-17 01:01:14:357 IESession.cpp(38) Entering IESession::Initialize
+D 2019-02-17 01:01:14:357 IESession.cpp(53) Mutex acquired for session initalization
+T 2019-02-17 01:01:14:360 IECommandExecutor.cpp(494) Entering IECommandExecutor::ThreadProc
+T 2019-02-17 01:01:14:378 IECommandExecutor.cpp(50) Entering IECommandExecutor::OnCreate
+T 2019-02-17 01:01:14:378 IECommandExecutor.cpp(908) Entering IECommandExecutor::PopulateElementFinderMethods
+T 2019-02-17 01:01:14:378 InputManager.cpp(40) Entering InputManager::InputManager
+T 2019-02-17 01:01:14:378 InputManager.cpp(75) Entering InputManager::Initialize
+T 2019-02-17 01:01:14:379 BrowserFactory.cpp(999) Entering BrowserFactory::GetExecutableLocation
+T 2019-02-17 01:01:14:379 BrowserFactory.cpp(1040) Entering BrowserFactory::GetIEVersion
+T 2019-02-17 01:01:14:379 CommandHandlerRepository.cpp(108) Entering CommandHandlerRepository::PopulateCommandHandlers
+T 2019-02-17 01:01:14:380 IESession.cpp(99) Created thread for command executor returns HWND: '00000000000404EE'
+T 2019-02-17 01:01:14:380 IESession.cpp(103) Session id is retrived from command executor window: '6b6a8a4d-6919-4f42-a094-36b54a3c16ea'
+D 2019-02-17 01:01:14:380 IESession.cpp(109) Releasing session initialization mutex
+T 2019-02-17 01:01:14:380 IESession.cpp(191) Entering IESession::ExecuteCommand
+T 2019-02-17 01:01:14:380 IECommandExecutor.cpp(125) Entering IECommandExecutor::OnSetCommand
+T 2019-02-17 01:01:14:380 command.cc(31) Entering Command::Deserialize
+D 2019-02-17 01:01:14:380 command.cc(36) Raw JSON command: { "name" : "newSession", "locator" : { }, "parameters" : {
+  "desiredCapabilities": {
+    "se:ieOptions": {
+    },
+    "browserName": "internet explorer"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "se:ieOptions": {
+        }
+      }
+    ]
+  }
+} }
+T 2019-02-17 01:01:14:380 IECommandExecutor.cpp(136) Entering IECommandExecutor::OnExecCommand
+T 2019-02-17 01:01:14:380 IECommandExecutor.cpp(566) Entering IECommandExecutor::DispatchCommand
+D 2019-02-17 01:01:14:380 CommandHandlers\NewSessionCommandHandler.cpp(46) Found W3C capabilities structure
+D 2019-02-17 01:01:14:380 CommandHandlers\NewSessionCommandHandler.cpp(572) Validating capabilities object
+D 2019-02-17 01:01:14:380 CommandHandlers\NewSessionCommandHandler.cpp(572) Validating capabilities object
+D 2019-02-17 01:01:14:380 CommandHandlers\NewSessionCommandHandler.cpp(607) Found browserName capability. Validating value type is string.
+D 2019-02-17 01:01:14:380 CommandHandlers\NewSessionCommandHandler.cpp(869) Found se:ieOptions capability. Validating value type is object.

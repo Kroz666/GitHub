@@ -1,17 +1,19 @@
+package Logins;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LitecartLogin {
+
+public class LitecartLoginFF {
     public static WebDriver driver;
 
-    public void LitecartLogin() {
+    public void LitecartLoginFF() {
     }
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Webdrivers\\chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.firefox.driver", "C:\\Webdrivers\\geckodriver.exe");
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get(" http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
