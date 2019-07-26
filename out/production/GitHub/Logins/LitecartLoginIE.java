@@ -3,6 +3,7 @@ package Logins;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverLogLevel;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
@@ -23,8 +24,10 @@ public class LitecartLoginIE {
                 .withLogFile(new File("iedriver.log")).build();
         driver = new InternetExplorerDriver(service, new  InternetExplorerOptions());
         driver.manage().window().maximize();
-        driver.get(" http://localhost/litecart/admin/");
-        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.get("http://localhost/litecart/admin/");
+        WebElement text =driver.findElement(By.name("username"));
+        text.sendKeys("admin");
+        //driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();
     }
